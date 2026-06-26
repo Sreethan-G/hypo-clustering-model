@@ -1,0 +1,7 @@
+metric,score
+gower_silhouette,0.1313
+cluster_0_silhouette,0.012500000186264515
+cluster_1_silhouette,0.13369999825954437
+cluster_2_silhouette,0.07989999651908875
+cluster_3_silhouette,0.11860000342130661
+cluster_4_silhouette,0.26030001044273376
