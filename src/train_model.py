@@ -190,11 +190,11 @@ for i in sorted(df['cluster'].unique()):
 
     ax.text(-0.30, (y_lower + y_upper) / 2,
             f'Cluster {i}  (n={size})',
-            fontsize=9, va='center', ha='left', color=color, fontweight='bold')
+            fontsize=10, va='center', ha='left', color=color, fontweight='bold')
 
     ax.text(cluster_sil.max() + 0.01, (y_lower + y_upper) / 2,
             f'mean={cluster_mean:.3f}',
-            fontsize=8, va='center', ha='left', color=color)
+            fontsize=10, va='center', ha='left', color=color)
 
     y_lower = y_upper + 15
 
@@ -238,9 +238,9 @@ print("\nCategorical features (proportions):")
 print(categorical_summary.round(3))
 
 fig, axes = plt.subplots(
-    1, 2,
-    figsize=(14, 5),
-    gridspec_kw={'width_ratios': [len(numeric_cols), len(categorical_cols)]}
+    2, 1,
+    figsize=(8, 10),
+    gridspec_kw={'height_ratios': [1, 1]}
 )
 
 sns.heatmap(
